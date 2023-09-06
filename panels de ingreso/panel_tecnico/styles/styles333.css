@@ -1,0 +1,13 @@
+.enviar-mensaje-boton {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .enviar-mensaje-boton:hover {
+    background-color: #2980b9;
+  }

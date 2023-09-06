@@ -1,0 +1,33 @@
+body {
+  background-color: #96bee6;
+}
+
+.container {
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 200px;
+  text-align: center;
+  padding: 20px;
+  background-color: #4e79db;
+  color: #020101;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: #4e79db;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 40px;
+}

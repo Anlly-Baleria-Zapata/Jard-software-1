@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/styles3.css">
+  <title>Registrarse</title>
+</head>
+
+<body>
+    <!-- Formulario de registro -->
+    <form action="../registrar/procesar_formulario.php" method="POST" class="login-form">
+        <div class="iniciar">
+            <h2>Registrarse</h2>
+        </div>
+
+        <!-- Campo para el nombre -->
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+
+        <!-- Campo para la identificación -->
+        <div class="form-group">
+            <label for="identificacion">Identificación:</label>
+            <input type="text" id="identificacion" name="identificacion" required>
+        </div>
+
+        <!-- Campo para la contraseña -->
+        <div class="form-group">
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena" required>
+        </div>
+
+        <!-- Campo para seleccionar el rol -->
+        <div class="form-group">
+            <label for="rol">Elija el Rol que le otorgó el administrador... Rol:</label>
+            <select id="rol" name="rol">
+                <option value="tecnico_sistemas">Técnico de Sistemas</option>
+                <option value="empleado">Empleado</option>
+                <option value="gerencia">Gerencia</option>
+            </select><br>
+        </div>
+
+        <!-- Botón para completar el registro -->
+        <div class="form-group">
+            <input type="submit" name="registro" value="Terminar registro">
+        </div>
+    </form>  
+    
+    <!-- Botones de navegación -->
+    <div class="container">
+        <button class="button"><a href="../index.html">Ir a la página principal</a></button>
+        <button class="button"><a href="../ingresar/index.html">Iniciar Sesión</a></button>
+    </div>
+</body>
+
+</html>
+
+

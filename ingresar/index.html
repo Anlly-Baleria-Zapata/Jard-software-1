@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles3.css">
+    <title>Formulario de Inicio de Sesión</title>
+</head>
+
+<body>
+    <!-- Formulario de inicio de sesión -->
+    <form action="../ingresar/procesar_login.php" method="post" class="login-form">
+        <!-- Encabezado del formulario -->
+        <div class="iniciar">
+            <h2>Iniciar sesión</h2>
+        </div>
+        <!-- Campo de identificación -->
+        <div class="form-group">
+            <label for="identificacion">Identificación:</label>
+            <input type="text" id="identificacion" name="identificacion" required>
+        </div>
+        <!-- Campo de contraseña -->
+        <div class="form-group">
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena" required>
+        </div>
+        <!-- Selección de rol -->
+        <div class="form-group">
+            <label for="rol">Rol:</label>
+            <select id="rol" name="rol">
+                <option value="tecnico_sistemas">Técnico de Sistemas</option>
+                <option value="empleado">Empleado</option>
+                <option value="gerencia">Gerencia</option>
+            </select>
+        </div>
+        <!-- Botón para enviar el formulario -->
+        <input type="submit" value="Iniciar sesión">
+    </form>
+
+    <!-- Botones adicionales -->
+    <div class="container">
+        <button class="button"><a href="../index.html">Ir a la página principal</a></button>
+        <button class="button"><a href="../registrar/index.html">Registrarse</a></button>
+    </div>
+</body>
+
+</html>

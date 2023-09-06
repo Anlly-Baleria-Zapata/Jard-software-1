@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- Configuración del documento -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/styles.css"> <!-- Enlace a la hoja de estilos -->
+  <title>jard</title> <!-- Título de la página -->
+</head>
+
+<body>
+  <!-- Barra de navegación -->
+  <div>
+    <ul class="navbar" id="myNavbar">
+      <nav class="barra">
+        <div class="logo">
+          <img src="logo/jard.png" alt="logo de pagina">
+        </div>
+        <!-- Enlaces de navegación -->
+        <li><a href="#Inicio">Inicio</a></li>
+        <li><a href="#acercadejard">Acerca de jard software</a></li>
+        <li><a href="#video">vídeo informativo</a></li>
+        <li><a href="#Servicios">Servicios</a></li>
+        <li><a href="ingresar/index.html">Iniciar sesión</a></li>
+        <li><a href="registrar/index.html">Registrar</a></li>
+
+        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">&#9776;</a>
+      </nav>
+    </ul>
+  </div>
+
+  <!-- Sección de Inicio -->
+  <section id="Inicio">
+    <div class="contenedor">
+      <!-- Imagen de fondo y contenido -->
+      <img src="img/portada.png" alt="Imagen de fondo">
+      <p class="parrafo">
+        <h2 class="h21">Jard Software</h2>
+        <h3>le ayudará a llevar el manejo de los inventarios de sus equipos tecnológicos de una manera simple y ordenada</h3>
+        <button type="button" class="button-ingresar"><a href="ingresar/index.html">ingresar</a></button>
+      </p>
+    </div>
+  </section>
+
+  <!-- Sección Acerca de Jard Software -->
+  <section id="acercadejard">
+    <div class="contenedor1">
+      <h2>Acerca De Jard Software</h2>
+    </div>
+    <div class="contenedor4">
+      <p>
+        <!-- Descripción del software -->
+        Jard software consiste en el Desarrollo e Implementación de un Software de Inventarios, para aquellos que tienen complicaciones en la gestión y el manejo de su inventario en el área de sistemas, especialmente para sus equipos de cómputo. Este software cuenta con herramientas más innovadoras, simples y sencillas.
+      </p>
+    </div>
+  </section>
+
+  <!-- Sección de Video Informativo -->
+  <section id="video">
+    <div class="contenedor1">
+      <h2>Video informativo</h2>
+    </div>
+    <div class="contenedor5">
+      <!-- Video con controles de reproducción -->
+      <video src="video/inventario.mp4" controls></video>
+    </div>
+  </section>
+
+  <!-- Sección de Servicios -->
+  <section id="Servicios">
+    <div class="contenedor1">
+      <h2>Servicios</h2>
+    </div>
+
+    <div class="contenedor2">
+      <!-- Carrusel de servicios -->
+      <div class="slider">
+        <div class="slide">
+          <!-- Imagen y descripción del primer servicio -->
+          <img src="img/equipos hdv.jpg" alt="Imagen 1">
+          <div class="caption">
+            <div class="texto1">
+              <h2>Hoja de vida de los equipos</h2>
+            </div>
+            <div class="texto">
+              <p>Tendrá la posibilidad de hacer la hoja de vida de cada uno de los equipos que ingrese, llevando así un manejo más organizado de sus computadores.</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="slide">
+          <img src="img/computadores.jpg" alt="Imagen 2">
+          <div class="caption">
+            <div class="texto1">
+              <h2>Computadores</h2>
+            </div>
+            <div class="texto">
+              <p>El software llevara el registro de los computadores que ingrese</p>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="img/ubicacion.png" alt="Imagen 3">
+          <div class="caption">
+            <div class="texto1">
+              <h2>Ubicación</h2>
+            </div>
+            <div class="texto">
+              <p>Usted podrá registrar la ubicación de cada equipo, teniendo en cuenta los roles y mantenimientos</p>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="img/depreciacion.jpg" alt="Imagen 4">
+          <div class="caption">
+            <div class="texto1">
+              <h2>Depreciación</h2>
+            </div>
+            <div class="texto">
+              <p>La vida útil de un computador puede variar dependiendo de varios factores, como el avance tecnológico,
+                el
+                uso intensivo, el mantenimiento y las necesidades específicas de la empresa. Por lo general, se estima
+                una vida
+                útil en años para determinar la duración de la depreciación de los computadores.</p>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="img/descar informe.png" alt="Imagen 5">
+          <div class="caption">
+            <div class="texto1">
+              <h2>Informe</h2>
+            </div>
+            <div class="texto">
+              <p>Podrá descargar el informe de lo que ha sucedido en cierto periodo con la información que registrado en
+                ese
+                periodo</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <!-- Botones de navegación del carrusel -->
+      <div class="button-container">
+        <button class="button" id="prevBtn">Anterior</button>
+        <button class="button" id="nextBtn">Siguiente</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Agradecimiento -->
+  <div class="agradecimiento">
+    <p>Gracias por visitar la página</p>
+  </div>
+
+  <!-- Pie de página -->
+  <footer class="creditos">
+    <p>© 2023 Anlly Baleria Zapata Arcila, 2521971. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Script para controlar interacción -->
+  <script src="script/script.js"></script>
+</body>
+
+</html>

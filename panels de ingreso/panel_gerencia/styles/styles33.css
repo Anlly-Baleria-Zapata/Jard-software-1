@@ -1,0 +1,28 @@
+
+.notificacion-boton {
+    background-color: #3498db;
+    color: #0a0808;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .notificacion-boton:hover {
+    background-color: #2980b9;
+  }
+  
+  .enviar-mensaje-boton {
+    background-color: #3498db;
+    color: #9eabe6;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .enviar-mensaje-boton:hover {
+    background-color: #2980b9;
+  }
+
