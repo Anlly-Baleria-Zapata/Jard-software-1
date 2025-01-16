@@ -1,0 +1,50 @@
+/* styles9.css */
+
+/* Estilos para el cuerpo */
+body.bg-light {
+    background-image: url('https://www.aquariumcostadealmeria.com/wp-content/uploads/2018/02/fondo-arenoso-1.jpg'); /* Asegúrate de que esta ruta apunte correctamente a tu imagen */
+    background-size: cover; /* Ajustar la imagen para cubrir toda la pantalla */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+/* Contenedor principal */
+.container {
+    text-align: center;
+    background-color: rgba(219, 205, 205, 0.815); /* Fondo blanco semitransparente */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el título */
+h1 {
+    color: #143053;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el botón */
+button {
+    background-color: #1d2e5c;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #1c3553;
+    transform: scale(1.05);
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(45, 77, 119, 0.5);
+}

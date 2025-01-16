@@ -172,6 +172,13 @@ $conn->close();
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="../script/script_edit_regis.js"></script>
 
+    <script>
+    if (typeof updateSuccessful !== 'undefined' && updateSuccessful) {
+        $('#alertModal').modal('show');
+    }
+</script>
+
+
 </body>
 
 </html>

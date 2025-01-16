@@ -5,12 +5,14 @@ $username = "root";
 $password = "morat12345";
 $database = "projard";
 
+
 $conn = new mysqli($servername, $username, $password, $database);
 
 if ($conn->connect_error) {
     die("Conexión fallida: " . $conn->connect_error);
 }
 
+// Recibir el mensaje del formulario
 if (isset($_POST['mensaje'])) {
     $mensaje = $_POST['mensaje'];
 

@@ -1,0 +1,79 @@
+
+/* Barra de navegación */
+.navbar {
+  background-color: #aaaab4; /* Color de fondo claro */
+  padding: 10px;
+}
+
+.navbar-toggler-icon {
+  background-color: #2d4d77; /* Color del ícono de alternar */
+}
+
+/* Barra de navegación - enlaces y logo */
+.navbar-brand, .navbar-nav .nav-link {
+    color: #000000 !important; /* Color inicial del texto en gris oscuro */
+    font-weight: bold;
+    transition: color 0.3s ease, background-color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+.navbar-brand:hover, .navbar-nav .nav-link:hover {
+    color: #4e4c4b !important; /* Color al pasar el ratón por encima */
+    background-color: #cfd5d8; /* Fondo al pasar el ratón por encima (solo para enlaces) */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Fondo del logo al pasar el ratón */
+.navbar-brand:hover {
+    background-color: transparent !important; /* Fondo transparente para el logo al pasar el ratón */
+}
+
+
+
+/* Caja de bienvenida */
+.caja {
+  text-align: center;
+  margin-top: 100px; /* Ajustar el margen superior para la barra de navegación fija */
+}
+
+.caja h1 {
+  color: #152233;
+  margin-bottom: 20px;
+  transition: color 0.3s ease-in-out; /* Transición para suavizar el efecto */
+}
+
+.caja img {
+  max-width: 200px;
+  transition: transform 0.3s ease-in-out; /* Transición para suavizar el efecto */
+}
+
+.caja img:hover {
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño de la imagen */
+}
+
+/* Contenedor */
+.container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Botón */
+.button {
+  background-color: #2d4d77;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background-color 0.3s, transform 0.3s ease-in-out; /* Transiciones para suavizar el efecto */
+}
+
+.button:hover {
+  background-color: #3c4750;
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño del botón */
+}
+
+
+
+  

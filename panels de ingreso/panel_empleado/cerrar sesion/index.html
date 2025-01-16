@@ -5,29 +5,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../styles/styles9.css">
+  <link rel="stylesheet" href="../stylesBoostrap/style_cerrarsesion.css">
   <title>Cerrar sesion</title>
 </head>
 
-<body>
 
-  <div class="container">
-    <h1>Su sesión ha finalizado</h1>
+<body class="bg-light d-flex flex-column align-items-center justify-content-center">
+
+  <div class="container text-center">
+    <h1 class="display-4 my-4">Su sesión ha finalizado</h1>
+    <button onclick="irAlInicio()" class="btn btn-primary btn-lg my-3">Ir al inicio</button>
   </div>
-
-  <button onclick="irAlInicio()">Ir al inicio</button>
 
   <script>
     function confirmarCerrarSesion() {
       if (confirm("¿Estás seguro de cerrar sesión?")) {
-
         window.location.href = "../cerrar sesion/index.html";
       }
     }
 
     function irAlInicio() {
       window.location.href = "../../../index.html";
-
     }
   </script>
 
