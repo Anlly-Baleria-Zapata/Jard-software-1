@@ -1,0 +1,64 @@
+
+
+/* Estilos para el cuerpo */
+body.bg-light {
+    background-image: url('https://www.aquariumcostadealmeria.com/wp-content/uploads/2018/02/fondo-arenoso-1.jpg'); /* Asegúrate de que esta ruta apunte correctamente a tu imagen */
+    background-size: cover; /* Ajustar la imagen para cubrir toda la pantalla */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+/* Tarjeta de inicio de sesión */
+.card {
+    border: none;
+    border-radius: 20px;
+}
+
+.card-header {
+    background-color: #2d4d77;
+}
+
+.card-header h2 {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.card-body .form-group label {
+    color: #2d4d77;
+}
+
+.card-body .form-control {
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: #152135;
+    border: none;
+    border-radius: 20px;
+}
+
+.btn-primary:hover {
+    background-color: #193363;
+}
+
+.btn-secondary a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.btn-secondary a:hover {
+    text-decoration: underline;
+}
+
+.btn-secondary {
+    background-color: #152135;
+    border: none;
+    border-radius: 20px;
+}
+
+.btn-secondary:hover {
+    background-color: #193363;
+}

@@ -13,11 +13,11 @@
 <body>
 
 <?php
-// Configuración de la conexión a la base de datos
+// Conexión a la base de datos
 $servername = "localhost";
 $username = "root";
-$password = "";
-$database = "proyectjard";
+$password = "morat12345";
+$database = "projard";
 
 $conn = new mysqli($servername, $username, $password, $database);
 
@@ -42,7 +42,7 @@ if ($result->num_rows === 1) {
         $id_rol = $row['id_rol'];
 
         // Consulta para obtener los roles permitidos
-        $sql_roles = "SELECT tecnico_sistemas, empleado, gerencia FROM nombre_rol WHERE id = '$id_rol'";
+        $sql_roles = "SELECT tecnico_sistemas, empleado, gerencia FROM nombre_rol WHERE id_rol = '$id_rol'";
         $result_roles = $conn->query($sql_roles);
 
         if ($result_roles->num_rows === 1) {
@@ -77,6 +77,7 @@ if ($result->num_rows === 1) {
 
 $conn->close();
 ?>
+
 
 </body>
 </html>

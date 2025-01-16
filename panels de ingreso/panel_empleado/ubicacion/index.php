@@ -1,8 +1,8 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "";
-$database = "proyectjard";
+$password = "morat12345";
+$database = "projard";
 
 $conn = new mysqli($servername, $username, $password, $database);
 
@@ -38,6 +38,7 @@ $result = $conn->query($sql);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="../styles/styles7.css">
     <title>Ubicación</title>
 </head>

@@ -5,163 +5,162 @@
   <!-- Configuración del documento -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/styles.css"> <!-- Enlace a la hoja de estilos -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="stylesBoostrap/style_inicio.css"> <!-- Enlace a la hoja de estilos -->
   <title>jard</title> <!-- Título de la página -->
 </head>
 
-<body>
-  <!-- Barra de navegación -->
-  <div>
-    <ul class="navbar" id="myNavbar">
-      <nav class="barra">
-        <div class="logo">
-          <img src="logo/jard.png" alt="logo de pagina">
-        </div>
-        <!-- Enlaces de navegación -->
-        <li><a href="#Inicio">Inicio</a></li>
-        <li><a href="#acercadejard">Acerca de jard software</a></li>
-        <li><a href="#video">vídeo informativo</a></li>
-        <li><a href="#Servicios">Servicios</a></li>
-        <li><a href="ingresar/index.html">Iniciar sesión</a></li>
-        <li><a href="registrar/index.html">Registrar</a></li>
-
-        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">&#9776;</a>
+  <body>
+      <!-- Barra de navegación -->
+      <nav class="navbar navbar-expand-lg bg-light sticky-top">
+          <a class="navbar-brand" href="#acercadejard">
+              <img src="logo/jard.png" alt="logo de pagina" class="d-inline-block align-top" style="width: 40px;">
+              jard
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item"><a class="nav-link" href="#Inicio">Inicio</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#acercadejard">Acerca de jard software</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#Servicios">Servicios</a></li>
+                  <li class="nav-item"><a class="nav-link" href="ingresar/index.html">Iniciar sesión</a></li>
+                  <li class="nav-item"><a class="nav-link" href="registrar/index.html">Registrar</a></li>
+              </ul>
+          </div>
       </nav>
-    </ul>
-  </div>
 
-  <!-- Sección de Inicio -->
-  <section id="Inicio">
-    <div class="contenedor">
-      <!-- Imagen de fondo y contenido -->
-      <img src="img/portada.png" alt="Imagen de fondo">
-      <p class="parrafo">
-        <h2 class="h21">Jard Software</h2>
-        <h3>le ayudará a llevar el manejo de los inventarios de sus equipos tecnológicos de una manera simple y ordenada</h3>
-        <button type="button" class="button-ingresar"><a href="ingresar/index.html">ingresar</a></button>
-      </p>
-    </div>
-  </section>
-
-  <!-- Sección Acerca de Jard Software -->
-  <section id="acercadejard">
-    <div class="contenedor1">
-      <h2>Acerca De Jard Software</h2>
-    </div>
-    <div class="contenedor4">
-      <p>
-        <!-- Descripción del software -->
-        Jard software consiste en el Desarrollo e Implementación de un Software de Inventarios, para aquellos que tienen complicaciones en la gestión y el manejo de su inventario en el área de sistemas, especialmente para sus equipos de cómputo. Este software cuenta con herramientas más innovadoras, simples y sencillas.
-      </p>
-    </div>
-  </section>
-
-  <!-- Sección de Video Informativo -->
-  <section id="video">
-    <div class="contenedor1">
-      <h2>Video informativo</h2>
-    </div>
-    <div class="contenedor5">
-      <!-- Video con controles de reproducción -->
-      <video src="video/inventario.mp4" controls></video>
-    </div>
-  </section>
-
-  <!-- Sección de Servicios -->
-  <section id="Servicios">
-    <div class="contenedor1">
-      <h2>Servicios</h2>
-    </div>
-
-    <div class="contenedor2">
-      <!-- Carrusel de servicios -->
-      <div class="slider">
-        <div class="slide">
-          <!-- Imagen y descripción del primer servicio -->
-          <img src="img/equipos hdv.jpg" alt="Imagen 1">
-          <div class="caption">
-            <div class="texto1">
-              <h2>Hoja de vida de los equipos</h2>
-            </div>
-            <div class="texto">
-              <p>Tendrá la posibilidad de hacer la hoja de vida de cada uno de los equipos que ingrese, llevando así un manejo más organizado de sus computadores.</p>
-            </div>
-          </div>
-        </div>
+          <!-- Sección de Inicio -->
+          <section id="Inicio" class="bg-image">
+              <div class="container text-center text-white d-flex flex-column justify-content-center align-items-center" style="height: 100vh;">
+                  <h2 class="display-4">Jard Software</h2>
+                  <h3 class="lead">Le ayudará a llevar el manejo de los inventarios de sus computadores de una manera simple y ordenada.</h3>
+                  <a href="ingresar/index.html" class="btn btn-primary btn-custom">Ingresar</a>
+              </div>
+          </section>
       
-        <div class="slide">
-          <img src="img/computadores.jpg" alt="Imagen 2">
-          <div class="caption">
-            <div class="texto1">
-              <h2>Computadores</h2>
-            </div>
-            <div class="texto">
-              <p>El software llevara el registro de los computadores que ingrese</p>
-            </div>
-          </div>
-        </div>
-        <div class="slide">
-          <img src="img/ubicacion.png" alt="Imagen 3">
-          <div class="caption">
-            <div class="texto1">
-              <h2>Ubicación</h2>
-            </div>
-            <div class="texto">
-              <p>Usted podrá registrar la ubicación de cada equipo, teniendo en cuenta los roles y mantenimientos</p>
-            </div>
-          </div>
-        </div>
-        <div class="slide">
-          <img src="img/depreciacion.jpg" alt="Imagen 4">
-          <div class="caption">
-            <div class="texto1">
-              <h2>Depreciación</h2>
-            </div>
-            <div class="texto">
-              <p>La vida útil de un computador puede variar dependiendo de varios factores, como el avance tecnológico,
-                el
-                uso intensivo, el mantenimiento y las necesidades específicas de la empresa. Por lo general, se estima
-                una vida
-                útil en años para determinar la duración de la depreciación de los computadores.</p>
-            </div>
-          </div>
-        </div>
-        <div class="slide">
-          <img src="img/descar informe.png" alt="Imagen 5">
-          <div class="caption">
-            <div class="texto1">
-              <h2>Informe</h2>
-            </div>
-            <div class="texto">
-              <p>Podrá descargar el informe de lo que ha sucedido en cierto periodo con la información que registrado en
-                ese
-                periodo</p>
-            </div>
-          </div>
-        </div>
+    <!-- Sección Acerca de Jard Software -->
+    <section id="acercadejard" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-4">Acerca De Jard Software</h2>
+          <p class="text-justify">
+            Jard Software es una solución integral dedicada a la gestión de inventarios de equipos de cómputo. 
+            Diseñada para satisfacer las necesidades y desafíos del sector tecnológico, 
+            Jard Software proporciona una plataforma robusta y fácil de usar que permite a las organizaciones administrar y 
+            optimizar su inventario de computadores de manera eficiente y precisa.
+            Nuestra misión es simplificar la gestión de inventarios de equipos de cómputo, 
+            mejorando la eficiencia operativa y proporcionando a las organizaciones las herramientas necesarias para mantener un control riguroso y actualizado de sus activos tecnológicos.
+          </p>
       </div>
-      </div>
+      </section>
 
-      <!-- Botones de navegación del carrusel -->
-      <div class="button-container">
-        <button class="button" id="prevBtn">Anterior</button>
-        <button class="button" id="nextBtn">Siguiente</button>
-      </div>
+    <!-- Sección de Servicios -->
+<section id="Servicios" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">Servicios</h2>
+
+        <!-- Contenedor de columnas para los servicios -->
+        <div class="row">
+            <!-- Primer servicio -->
+            <div class="col-md-4 mb-4">
+                <div class="service-item">
+                    <img src="img/hoja de vida de los equipos.jpg" class="d-block w-100" alt="Hoja de vida de los equipos">
+                    <div class="service-caption">
+                        <h5>Hoja de vida de los equipos</h5>
+                        <p>Tendrá la posibilidad de hacer la hoja de vida de cada uno de los equipos que ingrese, llevando así un manejo más organizado de sus computadores.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Segundo servicio -->
+            <div class="col-md-4 mb-4">
+                <div class="service-item">
+                    <img src="img/computadores.jpg" class="d-block w-100" alt="Computadores">
+                    <div class="service-caption">
+                        <h5>Computadores</h5>
+                        <p>Jard Software facilita el registro y seguimiento de todos los computadores dentro de la organización. Cada dispositivo se documenta con sus características técnicas y estado operativo, proporcionando una visión clara y actualizada del inventario de equipos de cómputo.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tercer servicio -->
+            <div class="col-md-4 mb-4">
+                <div class="service-item">
+                    <img src="img/ubicacion.jpeg" class="d-block w-100" alt="Ubicación">
+                    <div class="service-caption">
+                        <h5>Ubicación</h5>
+                        <p>La plataforma permite registrar y monitorear la ubicación de cada equipo de cómputo. Esto incluye la asignación a usuarios, departamentos o ubicaciones físicas específicas, y la gestión de roles y mantenimientos programados, asegurando que los recursos estén donde se necesitan y en óptimas condiciones.</p>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- Fin de la primera fila -->
+
+        <!-- Segunda fila con los servicios centrados -->
+        <div class="row justify-content-center">
+            <!-- Cuarto servicio -->
+            <div class="col-md-4 mb-4">
+                <div class="service-item">
+                    <img src="img/depreciacion.jpeg" class="d-block w-100" alt="Depreciación">
+                    <div class="service-caption">
+                        <h5>Depreciación</h5>
+                        <p>Nuestro software calcula la depreciación de los equipos de cómputo basándose en factores como el avance tecnológico, el uso intensivo, el mantenimiento y las necesidades específicas de la empresa. Esto permite a las organizaciones estimar la vida útil y el valor depreciado de cada dispositivo, facilitando la planificación de reemplazos y la optimización de recursos.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quinto servicio -->
+            <div class="col-md-4 mb-4">
+                <div class="service-item">
+                    <img src="img/informe.jpeg" class="d-block w-100" alt="Informe">
+                    <div class="service-caption">
+                        <h5>Informe</h5>
+                        <p>Jard Software genera informes detallados y personalizados sobre el estado y uso de los equipos de cómputo. Estos informes pueden descargarse y analizarse para obtener una visión completa de lo que ha sucedido en un período determinado, ayudando en la toma de decisiones estratégicas y en la gestión efectiva de los recursos tecnológicos.</p>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- Fin de la segunda fila -->
     </div>
-  </section>
+</section>
 
-  <!-- Agradecimiento -->
-  <div class="agradecimiento">
-    <p>Gracias por visitar la página</p>
-  </div>
-
-  <!-- Pie de página -->
-  <footer class="creditos">
-    <p>© 2023 Anlly Baleria Zapata Arcila, 2521971. Todos los derechos reservados.</p>
-  </footer>
+    <!-- Pie de página -->
+    <footer class="creditos py-3 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <!-- Sección de Enlaces Rápidos -->
+                <div class="col-md-4">
+                    <h5>Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#acercadejard" class="text-white">Acerca de Jard Software</a></li>
+                        <li><a href="#Servicios" class="text-white">Servicios</a></li>
+                        <li><a href="#Inicio" class="text-white">Inicio</a></li>
+                    </ul>
+                </div>
+                <!-- Sección de Contacto -->
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <ul class="list-unstyled">
+                        <li>Email: <a href="mailto:info@jardsoftware.com" class="text-white">info@jardsoftware.com</a></li>
+                        <li>Teléfono: <a href="tel:+123456789" class="text-white">+123456789</a></li>
+                        <li>Dirección: Calle Falsa 123, Medellín, Colombia</li>
+                    </ul>
+                </div>
+               
+            </div>
+            <div class="text-center mt-3">
+                <p>© 2023 Anlly Baleria Zapata Arcila, 2521971. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
 
   <!-- Script para controlar interacción -->
   <script src="script/script.js"></script>
+
+  <!-- Incluye jQuery y Bootstrap JS --> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>

@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="../styles/styles4.css">
   <style>
     .mantenimiento {
@@ -77,7 +78,7 @@
       <select name="personas_responsables" id="personas_responsables" class="styled-select">
         <?php
         // Conecta a la base de datos y realiza la consulta
-        $conexion = mysqli_connect("localhost", "root", "", "proyectjard");
+        $conexion = mysqli_connect("localhost", "root", "morat12345", "projard");
         if (!$conexion) {
           die("Error al conectar a la base de datos: " . mysqli_connect_error());
         }

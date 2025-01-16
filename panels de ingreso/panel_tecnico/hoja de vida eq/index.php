@@ -77,7 +77,7 @@
       <select name="personas_responsables" id="personas_responsables" class="styled-select">
         <?php
         // Conecta a la base de datos y realiza la consulta
-        $conexion = mysqli_connect("localhost", "root", "", "proyectjard");
+        $conexion = mysqli_connect("localhost", "root", "morat12345", "projard");
         if (!$conexion) {
           die("Error al conectar a la base de datos: " . mysqli_connect_error());
         }

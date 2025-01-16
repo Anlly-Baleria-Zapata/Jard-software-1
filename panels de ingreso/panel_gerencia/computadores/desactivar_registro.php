@@ -11,7 +11,7 @@ if (isset($_GET["id"])) {
         // Registro desactivado exitosamente, mostrar mensaje de confirmación
         echo '<script>
             if (confirm("Registro desactivado exitosamente.")) {
-                window.location.href = "../computadores/index.php"; // Reemplaza "otra_pagina.php" con la URL a la que deseas redirigir
+                window.location.href = "../computadores/index.php"; 
             } else {
                 window.location.href = document.referrer; // Redirige de nuevo a la página anterior si se cancela
             }

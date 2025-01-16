@@ -1,0 +1,110 @@
+/* style_pc.css */
+
+/* Fondo del cuerpo */
+body.bg-light {
+  background-color: #f7f7f9;
+}
+
+/* Barra de navegación */
+.navbar {
+  background-color: #aaaab4; /* Color de fondo claro */
+  padding: 10px;
+}
+
+.navbar-toggler-icon {
+  background-color: #2d4d77; /* Color del ícono de alternar */
+}
+
+/* Barra de navegación - enlaces y logo */
+.navbar-brand, .navbar-nav .nav-link {
+  color: #000000 !important; /* Color inicial del texto en gris oscuro */
+  font-weight: bold;
+  transition: color 0.3s ease, background-color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+.navbar-brand:hover, .navbar-nav .nav-link:hover {
+  color: #424055 !important; /* Color al pasar el ratón por encima */
+  background-color: #cfd5d8; /* Fondo al pasar el ratón por encima (solo para enlaces) */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Fondo del logo al pasar el ratón */
+.navbar-brand:hover {
+  background-color: transparent !important; /* Fondo transparente para el logo al pasar el ratón */
+}
+
+/* titulo */
+.titulo-principal {
+  font-size: 32px; /* Tamaño del texto */
+  font-weight: bold; /* Negrita para destacar */
+  color: #152233; /* Color del título */
+  text-align: center; /* Alineación central */
+  margin: 20px 0; /* Espaciado superior e inferior */
+  padding: 10px; /* Espaciado interno */
+  border-bottom: 2px solid #2d4d77; /* Línea decorativa debajo */
+  letter-spacing: 1px; /* Espaciado entre letras */
+  text-transform: uppercase; /* Convertir a mayúsculas */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+
+/* Tabla */
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  margin-top: 10px; /* Reducción de margen superior */
+  white-space: nowrap; /* Evitar que el texto se ajuste automáticamente */
+}
+
+.table thead {
+  background-color: #2d4d77;
+  color: white;
+}
+
+.table tbody tr:hover {
+  background-color: #f2f2f2;
+}
+
+.table tbody td {
+  text-align: center;
+}
+
+.fixed-buttons {
+  position: fixed;
+  bottom: 20px; /* Distancia desde la parte inferior */
+  width: 100%; /* Ocupa todo el ancho de la pantalla */
+  display: flex;
+  justify-content: space-between; /* Alinea los botones a los extremos */
+  padding: 0 20px; /* Espaciado interno para que no queden pegados a los bordes */
+  z-index: 1000; /* Asegura que estén por encima de otros elementos */
+}
+
+.boton-volver, .boton-seguir {
+  background-color: #2d4d77;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background-color 0.3s, transform 0.3s ease-in-out;
+}
+
+.boton-volver:hover, .boton-seguir:hover {
+  background-color: #2d3442;
+  transform: scale(1.05);
+}
+
+.boton-volver a, .boton-seguir a {
+  color: white;
+  text-decoration: none;
+}
+
+.boton-volver a:hover, .boton-seguir a:hover {
+  text-decoration: underline;
+}
+

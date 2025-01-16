@@ -1,0 +1,191 @@
+/* styles.css */
+
+/* Barra de navegacion */
+
+
+.navbar-nav .nav-link {
+    color: #000000; /* Color inicial del texto */
+    font-weight: bold;
+    transition: color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #504c4a; /* Color al pasar el ratón por encima */
+    background-color: #cfd5d8; /* Fondo al pasar el ratón por encima */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Contenedor de inicio */
+.bg-image {
+    background-image: url('https://www.aquariumcostadealmeria.com/wp-content/uploads/2018/02/fondo-arenoso-1.jpg'); /* Asegúrate de que esta ruta apunte correctamente a tu imagen */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-image:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Oscurece la imagen con un overlay */
+    z-index: 1;
+}
+
+.bg-image .container {
+    position: relative;
+    z-index: 2;
+    color: #ffffff;
+}
+
+.btn-primary {
+    background-color: #3974c2; 
+    border-color: #2d4d77; 
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave para el color y transformación */ 
+} 
+    
+.btn-primary:hover { 
+    background-color: #294c75; 
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el ratón por encima */ 
+}
+
+
+/* Estilo para la Sección Acerca de Jard Software */
+#acercadejard {
+    background-color: #f8f9fa; /* Fondo claro */
+    padding: 60px 0; /* Espaciado en la parte superior e inferior */
+}
+
+#acercadejard .container {
+    max-width: 800px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centrar el contenedor */
+    text-align: center; /* Centrar el texto */
+}
+
+#acercadejard h2 {
+    color: #2d4d77; /* Color del encabezado */
+    font-weight: bold; /* Texto en negrita */
+    margin-bottom: 20px; /* Espaciado debajo del encabezado */
+}
+
+#acercadejard p {
+    color: #555; /* Color del texto */
+    font-size: 1.1em; /* Tamaño de la fuente */
+    line-height: 1.6; /* Altura de línea */
+    text-align: justify; /* Justificar el texto */
+}
+
+
+
+
+
+
+/* styles.css */
+
+/* Estilo para la Sección de Servicios */
+
+#Servicios {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+#Servicios h2 {
+    color: #2d4d77;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+/* Estilo para cada item de servicio */
+.service-item img {
+    height: 400px; /* Ajusta la altura de las imágenes */
+    object-fit: cover;
+    border-radius: 50px; /* Redondear las esquinas de las imágenes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para las imágenes */
+}
+
+.service-caption {
+    background-color: rgba(0, 0, 0, 0.822); /* Fondo semitransparente */
+    padding: 20px;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.service-caption h5 {
+    color: #ffffff; /* Color del texto */
+    font-weight: bold;
+}
+
+.service-caption p {
+    color: #d4d4d4; /* Color del texto */
+    font-size: 1em;
+}
+
+/* Estilo para los items en columnas */
+.service-item {
+    position: relative;
+}
+
+.col-md-4 {
+    margin-bottom: 20px;
+}
+
+
+
+/* Estilo para el Pie de Página */
+.creditos {
+    background-color: #2d4d77;
+    color: #ffffff;
+    padding: 20px 0;
+    font-size: 1em;
+    border-top: 2px solid #ff6600;
+}
+
+.creditos h5 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.creditos ul {
+    padding-left: 0;
+}
+
+.creditos ul li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.creditos a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.creditos a:hover {
+    text-decoration: underline;
+}
+
+.creditos .fab {
+    transition: color 0.3s;
+}
+
+.creditos .fab:hover {
+    color: #ff6600;
+}
+
+.creditos p {
+    margin: 0;
+}
+
+
+
+
+  
+

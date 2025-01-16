@@ -1,48 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/styles3.css">
     <title>Formulario de Inicio de Sesión</title>
+    <!-- Incluye Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Incluye tu CSS personalizado -->
+    <link rel="stylesheet" href="../stylesBoostrap/style_ingresar_registrar.css">
 </head>
 
-<body>
-    <!-- Formulario de inicio de sesión -->
-    <form action="../ingresar/procesar_login.php" method="post" class="login-form">
-        <!-- Encabezado del formulario -->
-        <div class="iniciar">
-            <h2>Iniciar sesión</h2>
-        </div>
-        <!-- Campo de identificación -->
-        <div class="form-group">
-            <label for="identificacion">Identificación:</label>
-            <input type="text" id="identificacion" name="identificacion" required>
-        </div>
-        <!-- Campo de contraseña -->
-        <div class="form-group">
-            <label for="contrasena">Contraseña:</label>
-            <input type="password" id="contrasena" name="contrasena" required>
-        </div>
-        <!-- Selección de rol -->
-        <div class="form-group">
-            <label for="rol">Rol:</label>
-            <select id="rol" name="rol">
-                <option value="tecnico_sistemas">Técnico de Sistemas</option>
-                <option value="empleado">Empleado</option>
-                <option value="gerencia">Gerencia</option>
-            </select>
-        </div>
-        <!-- Botón para enviar el formulario -->
-        <input type="submit" value="Iniciar sesión">
-    </form>
-
-    <!-- Botones adicionales -->
+<body class="bg-light">
     <div class="container">
-        <button class="button"><a href="../index.html">Ir a la página principal</a></button>
-        <button class="button"><a href="../registrar/index.html">Registrarse</a></button>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card mt-5 shadow">
+                    <div class="card-header text-center bg-dark text-white">
+                        <h2>Iniciar sesión</h2>
+                    </div>
+                    <div class="card-body">
+                        <!-- Formulario de inicio de sesión -->
+                        <form action="../ingresar/procesar_login.php" method="post">
+                            <!-- Campo de identificación -->
+                            <div class="form-group">
+                                <label for="identificacion">Identificación:<span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="identificacion" name="identificacion" required>
+                            </div>
+                            <!-- Campo de contraseña -->
+                            <div class="form-group">
+                                <label for="contrasena">Contraseña:<span class="text-danger">*</span></label>
+                                <input type="password" class="form-control" id="contrasena" name="contrasena" required>
+                            </div>
+                            <!-- Selección de rol -->
+                            <div class="form-group">
+                                <label for="rol">Rol:<span class="text-danger">*</span></label>
+                                <select id="rol" class="form-control" name="rol" required>
+                                    <option value="" disabled selected>Selecciona un rol</option>
+                                    <option value="tecnico_sistemas">Técnico de Sistemas</option>
+                                    <option value="empleado">Empleado</option>
+                                    <option value="gerencia">Gerencia</option>
+                                </select>
+                            </div>
+                            <!-- Botón para enviar el formulario -->
+                            <button type="submit" class="btn btn-primary btn-block">Iniciar sesión</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Botones adicionales -->
+                <div class="mt-3 text-center">
+                    <button class="btn btn-secondary mr-2"><a href="../index.html" class="text-white text-decoration-none">Ir a la página principal</a></button>
+                    <button class="btn btn-secondary"><a href="../registrar/index.html" class="text-white text-decoration-none">Registrarse</a></button>
+                </div>
+            </div>
+        </div>
     </div>
-</body>
 
+    <!-- Incluye jQuery y Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
 </html>
+

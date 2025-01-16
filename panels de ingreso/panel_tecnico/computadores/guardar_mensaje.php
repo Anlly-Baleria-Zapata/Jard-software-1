@@ -2,8 +2,8 @@
 // Configuración de la conexión a la base de datos
 $servername = "localhost";
 $username = "root";
-$password = "";
-$database = "proyectjard";
+$password = "morat12345";
+$database = "projard";
 
 // Crear la conexión
 $conn = new mysqli($servername, $username, $password, $database);
