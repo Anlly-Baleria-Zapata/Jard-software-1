@@ -27,14 +27,17 @@ Para configurar la base de datos de este proyecto, sigue estos pasos:
 
 **Ejemplo de archivo de configuración**:
 
-```js
+# Jard Software
+
 // config.js o .env
+```javascript
 module.exports = {
   host: 'localhost',
   user: 'root',
   password: 'morat12345',
   database: 'projard'
 };
+
 
 
 
