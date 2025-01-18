@@ -1,54 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabla de Base de Datos</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            margin: 0;
-            padding: 0;
-        }
-
-        h1 {
-            background-color: #3498db;
-            color: white;
-            padding: 10px;
-            margin: 0;
-        }
-
-        table {
-            border-collapse: collapse;
-            width: 80%;
-            margin: 20px auto;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        th,
-        td {
-            padding: 10px 15px;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
-        }
-
-        th {
-            background-color: #3498db;
-            color: white;
-        }
-
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
-    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../stylesBoostrap/style_msg_invent.css">
+    <title>Tabla de Mensajes de Inventario</title>
 </head>
 
-<body>
+<body class="bg-light">
 
-    <h1>Notificaciones de problemas de inventario</h1>
+    <!-- Título de la página -->
+    <div class="container mt-4">
+        <h1 class="text-center">Notificaciones de problemas de inventario</h1>
+    </div>
 
     <?php
     $servername = "localhost";
@@ -66,35 +32,46 @@
     $result = $conn->query($sql);
     ?>
 
-    <table>
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Nombre</th>
-                <th>Descripción</th>
-            </tr>
-        </thead>
-        <tbody>
-            <?php
-            if ($result->num_rows > 0) {
-                while ($row = $result->fetch_assoc()) {
-                    echo "<tr>";
-                    echo "<td>" . $row["id"] . "</td>";
-                    echo "<td>" . $row["mensaje"] . "</td>";
-                    echo "<td>" . $row["fecha_envio"] . "</td>";
-                    echo "</tr>";
-                }
-            } else {
-                echo "<tr><td colspan='3'>No hay registros</td></tr>";
-            }
-            ?>
-        </tbody>
-    </table>
+    <!-- Tabla de mensajes -->
+    <div class="container mt-4">
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Descripción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php
+                    if ($result->num_rows > 0) {
+                        while ($row = $result->fetch_assoc()) {
+                            echo "<tr>";
+                            echo "<td>" . $row["id"] . "</td>";
+                            echo "<td>" . $row["mensaje"] . "</td>";
+                            echo "<td>" . $row["fecha_envio"] . "</td>";
+                            echo "</tr>";
+                        }
+                    } else {
+                        echo "<tr><td colspan='3'>No hay registros</td></tr>";
+                    }
+                    ?>
+                </tbody>
+            </table>
+        </div>
+    </div>
 
     <?php
     $conn->close();
     ?>
 
+    <!-- Botón Volver -->
+    <div class="container mt-4 text-center">
+        <button class="btn btn-secondary"><a href="../computadores/index.php" class="text-white">Volver</a></button>
+    </div>
+
 </body>
 
 </html>
+

@@ -1,0 +1,77 @@
+/* styles6.css */
+
+/* Fondo del cuerpo */
+body.bg-light {
+    background-color: #f8f9fa;
+    padding-top: 100px; /* Espacio superior para que no esté muy pegado al borde */
+}
+
+/* Contenedor del formulario */
+.form-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+/* Título */
+.regis h1 {
+    color: #2d4d77;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Estilos para inputs y selects */
+.form-control, .form-check-input {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Estilos para el botón */
+.btn-primary {
+    background-color: #2d4d77;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #1c3553;
+    transform: scale(1.05);
+}
+
+
+/* Margen superior y centralizado */
+.container {
+    margin-top: 60px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilos para el modal */
+.modal-header {
+    background-color: #2d4d77;
+    color: white;
+}
+
+.modal-footer {
+    justify-content: center;
+}
+
+.modal-footer .btn {
+    background-color: #2d4d77;
+    border: none;
+    border-radius: 10px;
+}
+
+.modal-footer .btn:hover {
+    background-color: #1c3553;
+}
+
+

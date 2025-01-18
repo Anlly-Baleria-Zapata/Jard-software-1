@@ -1,0 +1,184 @@
+/* style_hve.css */
+
+/* Barra de navegación */
+.navbar {
+    background-color: #aaaab4; /* Color de fondo claro */
+    padding: 10px;
+  }
+  
+  .navbar-toggler-icon {
+    background-color: #2d4d77; /* Color del ícono de alternar */
+  }
+  
+  /* Barra de navegación - enlaces y logo */
+  .navbar-brand, .navbar-nav .nav-link {
+      color: #000000 !important; /* Color inicial del texto en gris oscuro */
+      font-weight: bold;
+      transition: color 0.3s ease, background-color 0.3s ease; /* Transición suave para el cambio de color */
+  }
+  
+  .navbar-brand:hover, .navbar-nav .nav-link:hover {
+      color: #424055 !important; /* Color al pasar el ratón por encima */
+      background-color: #cfd5d8; /* Fondo al pasar el ratón por encima (solo para enlaces) */
+      border-radius: 5px; /* Bordes redondeados */
+  }
+  
+  /* Fondo del logo al pasar el ratón */
+  .navbar-brand:hover {
+      background-color: transparent !important; /* Fondo transparente para el logo al pasar el ratón */
+  }
+  
+ 
+  
+/* titulo */
+.titulo-principal {
+  font-size: 32px; /* Tamaño del texto */
+  font-weight: bold; /* Negrita para destacar */
+  color: #152233; /* Color del título */
+  text-align: center; /* Alineación central */
+  margin: 20px 0; /* Espaciado superior e inferior */
+  padding: 10px; /* Espaciado interno */
+  border-bottom: 2px solid #2d4d77; /* Línea decorativa debajo */
+  letter-spacing: 1px; /* Espaciado entre letras */
+  text-transform: uppercase; /* Convertir a mayúsculas */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+  
+  /* Contenedor del formulario */
+  .form-container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    margin-bottom: 100px;
+    margin-top: 20px; /* Ajusta el margen superior */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+  }
+  
+  /* Etiquetas y entradas del formulario */
+  label {
+    color: #152233;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  .styled-select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  /* Botón de envío */
+  button[type="submit"] {
+    background-color: #2d4d77;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s, transform 0.3s ease-in-out; /* Transiciones para suavizar el efecto */
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #2d3442;
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño del botón */
+  }
+  
+
+/* Botones de navegación */
+.fixed-buttons {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #2d4d7700; /* Fondo sólido */
+  z-index: 999;
+}
+
+.container {
+  margin-bottom: 80px; /* Ajustar según sea necesario */
+}
+
+.boton-volver, .boton-seguir {
+  background-color: #2d4d77;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background-color 0.3s, transform 0.3s ease-in-out;
+}
+
+.boton-volver:hover, .boton-seguir:hover {
+  background-color: #2d3442;
+  transform: scale(1.05);
+}
+
+.boton-volver a, .boton-seguir a {
+  color: white;
+  text-decoration: none;
+}
+
+.boton-volver a:hover, .boton-seguir a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+/* Estilos para el modal */
+/* Estilos para el formulario */
+.form-container {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.styled-select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.required {
+  color: red;
+}
+
+.mantenimiento {
+  margin-top: 20px;
+}
+
+/* Estilos para el modal */
+.modal-header {
+  background-color: #2d4d77;
+  color: white;
+}
+
+.modal-footer {
+  justify-content: center;
+}
+
+.modal-footer .btn {
+  background-color: #2d4d77;
+  border: none;
+  border-radius: 10px;
+}
+
+.modal-footer .btn:hover {
+  background-color: #1c3553;
+}

@@ -30,164 +30,131 @@ $result = $conn->query($sql);
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../styles/styles6.css">
-  <link rel="stylesheet" href="../styles/styles33.css">
-  <style>
-    .acciones {
-      text-align: center;
-    }
-
-    .acciones a {
-      margin: 0 5px;
-      text-decoration: none;
-      color: #000000;
-      font-weight: bold;
-    }
-  </style>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../stylesBoostrap/style_pc.css">
   <title>Computadores</title>
 </head>
 
-<body>
-  <div>
-    <ul class="navbar" id="myNavbar">
-      <nav class="barra">
-        <div class="logo">
-          <img src="../logo/jard.png" alt="logo de pagina">
-        </div>
-        <li><a href="../tecnico_sistemas_panel.php">Inicio</a></li>
-        <li><a href="../hoja de vida eq/index.php">RLHV-E</a></li>
-        <li><a href="../computadores/index.php">Computadores</a></li>
-        <li><a href="../ubicacion/index.php">Ubicación</a></li>
-        <li><a href="../depreciacion/index.php">Depreciacion</a></li>
-        <li><a href="../fpdf/generar_informe.php">Informe</a></li>
-        <li><a class="boton-cerrar-sesion" onclick="confirmarCerrarSesion()">Cerrar sesión</a></li>
+<body class="bg-light">
 
-        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">&#9776;</a>
-      </nav>
-    </ul>
-  </div>
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <a class="navbar-brand" href="#">
+      <img src="../logo/jard.png" alt="logo de pagina" style="width: 40px;"> jard
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="../panel_tecnico/tecnico_sistemas_panel.php">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="../hoja de vida eq/index.php">RLHV-E</a></li>
+        <li class="nav-item"><a class="nav-link" href="../computadores/index.php">Computadores</a></li>
+        <li class="nav-item"><a class="nav-link" href="../ubicacion/index.php">Ubicación</a></li>
+        <li class="nav-item"><a class="nav-link" href="../depreciacion/index.php">Depreciacion</a></li>
+        <li class="nav-item"><a class="nav-link" href="../fpdf/generar_informe.php">Informe</a></li>
+        <li class="nav-item"><a class="nav-link" onclick="confirmarCerrarSesion()">Cerrar sesión</a></li>
+      </ul>
+    </div>
+  </nav>
 
+  <!-- Título de la página -->
   <div class="regis">
-    <h1>Registro de Computadores segun el rlhv_e</h1>
+    <h1 class="titulo-principal">Registro de Computadores según el RLHV-E</h1>
   </div>
 
-  <input type="text" id="busqueda" placeholder="Buscar...">
+  <!-- Campo de búsqueda -->
+  <div class="container mt-4">
+    <input type="text" id="busqueda" class="form-control" placeholder="Buscar...">
+  </div>
 
-  <table>
-    <thead>
-      <tr>
-        <th>num hoja de vida equipo</th>
-        <th>ID del equipo</th>
-        <th>Nombre del SO</th>
-        <th>Nombre del sistema</th>
-        <th>Modelo del sistema</th>
-        <th>Precauciones de utilización</th>
-        <th>Personas responsables</th>
-        <th>Observaciones generales</th>
-        <th>Mantenimiento asignado</th>
-        <th>Reparación asignada</th>
-        <th>Activo/Desactivado</th>
-        <th>Acciones</th>
-      </tr>
-    </thead>
-    <tbody>
-      <?php
-      if ($result->num_rows > 0) {
-        while ($row = $result->fetch_assoc()) {
-          echo "<tr>";
-          echo "<td>" . $row["num_hoja_de_vida_equipo"] . "</td>";
-          echo "<td>" . $row["id_equipo"] . "</td>";
-          echo "<td>" . $row["nombre_SO"] . "</td>";
-          echo "<td>" . $row["nombre_sistema"] . "</td>";
-          echo "<td>" . $row["modelo_sistema"] . "</td>";
-          echo "<td>" . $row["precauciones_utilizacion"] . "</td>";
-          echo "<td>" . $row["personas_responsables"] . "</td>";
-          echo "<td>" . $row["observaciones_generales"] . "</td>";
-          echo "<td>" . $row["mantenimiento_asignado"] . "</td>";
-          echo "<td>" . $row["reparacion_asignada"] . "</td>";
+  <!-- Tabla de registros -->
+  <div class="table-responsive mt-4 container">
+    <table class="table table-bordered table-hover">
+      <thead class="thead-dark">
+        <tr>
+          <th>Número de Hoja de Vida del Equipo</th>
+          <th>ID del Equipo</th>
+          <th>Nombre del SO</th>
+          <th>Nombre del Sistema</th>
+          <th>Modelo del Sistema</th>
+          <th>Precauciones de Utilización</th>
+          <th>Personas Responsables</th>
+          <th>Observaciones Generales</th>
+          <th>Mantenimiento Asignado</th>
+          <th>Reparación Asignada</th>
+          <th>Activo/Desactivado</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <?php
+        if ($result->num_rows > 0) {
+          while ($row = $result->fetch_assoc()) {
+            echo "<tr>";
+            echo "<td>" . $row["num_hoja_de_vida_equipo"] . "</td>";
+            echo "<td>" . $row["id_equipo"] . "</td>";
+            echo "<td>" . $row["nombre_SO"] . "</td>";
+            echo "<td>" . $row["nombre_sistema"] . "</td>";
+            echo "<td>" . $row["modelo_sistema"] . "</td>";
+            echo "<td>" . $row["precauciones_utilizacion"] . "</td>";
+            echo "<td>" . $row["personas_responsables"] . "</td>";
+            echo "<td>" . $row["observaciones_generales"] . "</td>";
+            echo "<td>" . $row["mantenimiento_asignado"] . "</td>";
+            echo "<td>" . $row["reparacion_asignada"] . "</td>";
 
-          // Columna de Activo/Desactivado
-          echo "<td>";
-          if ($row["activo"] == 1) {
-            echo "Activo";
-          } else {
-            echo "Desactivado";
+            // Columna de Activo/Desactivado
+            echo "<td>";
+            if ($row["activo"] == 1) {
+              echo "Activo";
+            } else {
+              echo "Desactivado";
+            }
+            echo "</td>";
+
+            // Columna de Acciones
+            echo '<td class="acciones">
+          <a href="editar_registro.php?id=' . $row["num_hoja_de_vida_equipo"] . '" class="btn btn-primary btn-sm">Editar</a>
+          <a href="desactivar_registro.php?id=' . $row["num_hoja_de_vida_equipo"] . '" class="btn btn-danger btn-sm">Desactivar</a>
+          </td>';
+
+            echo "</tr>";
           }
-          echo "</td>";
-
-          // Columna de Acciones
-          echo '<td class="acciones">
-        <a href="editar_registro.php?id=' . $row["num_hoja_de_vida_equipo"] . '">Editar</a> |
-        <a href="desactivar_registro.php?id=' . $row["num_hoja_de_vida_equipo"] . '">Desactivar</a>
-    </td>';
-
-          echo "</tr>";
+        } else {
+          echo "<tr><td colspan='12'>No se encontraron registros.</td></tr>";
         }
-      } else {
-        echo "<tr><td colspan='12'>No se encontraron registros.</td></tr>";
-      }
-      ?>
-      <?php
-      $conn->close();
-      ?>
-    </tbody>
-  </table>
-  <div class="notificacion">
-    <button id="notificarBtn" class="notificacion-boton">Notificar Problemas de Inventario</button>
-    <button class="notificacion-boton"><a href="../computadores/tabla.php" class="ver-notificaciones-btn">Ver Registros de Notificaciones</a></button>
-    <div id="chatBox" class="chat-box" style="display: none;">
+        ?>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Notificaciones -->
+  <div class="container mt-4 notificacion">
+    <button id="notificarBtn" class="btn btn-warning">Notificar Problemas de Inventario</button>
+    <a href="../computadores/tabla.php" class="btn btn-info">Ver Registros de Notificaciones</a>
+    <div id="chatBox" class="chat-box mt-4" style="display: none;">
       <div class="chat-input">
-        <form id="messageForm" action="guardar_mensaje.php" method="post">
-          <input type="text" id="messageInput" name="mensaje" placeholder="Escribe tu mensaje...">
-          <button type="submit" id="sendMessageBtn" class="enviar-mensaje-boton">Enviar</button>
+        <form id="messageForm" action="../computadores/guardar_mensaje.php" method="post">
+          <input type="text" id="messageInput" name="mensaje" class="form-control" placeholder="Escribe tu mensaje...">
+          <button type="submit" id="sendMessageBtn" class="btn btn-primary mt-2">Enviar</button>
         </form>
       </div>
     </div>
   </div>
 
-  <div class="botones-container1">
-    <button class="boton-volver"><a href="../hoja de vida eq/index.php">Volver</a></button>
-    <button class="boton-seguir"><a href="../ubicacion/index.php">Seguir</a></button>
+  <!-- Botones de navegación -->
+  <div class="fixed-buttons">
+    <button class="boton-volver"><a href="../hoja de vida eq/index.php" class="text-white">Volver</a></button>
+    <button class="boton-seguir"><a href="../ubicacion/index.php" class="text-white">Seguir</a></button>
   </div>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      const input = document.getElementById("busqueda");
-      const tabla = document.querySelector("table tbody");
-      const filas = tabla.getElementsByTagName("tr");
-
-      input.addEventListener("keyup", function() {
-        const valorBusqueda = input.value.toLowerCase();
-
-        for (let i = 0; i < filas.length; i++) {
-          const fila = filas[i];
-          const celdas = fila.getElementsByTagName("td");
-          let mostrarFila = false;
-
-          for (let j = 0; j < celdas.length; j++) {
-            const celda = celdas[j];
-
-            if (celda.textContent.toLowerCase().indexOf(valorBusqueda) > -1) {
-              mostrarFila = true;
-              break;
-            }
-          }
-
-          if (mostrarFila) {
-            fila.style.display = "";
-          } else {
-            fila.style.display = "none";
-          }
-        }
-      });
-    });
-  </script>
-  <script src="../script/script33.js"></script>
+  
+  <script src="../script/script_pc.js"></script>
 
 </body>
 
