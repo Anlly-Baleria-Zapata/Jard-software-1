@@ -27,10 +27,6 @@ Para configurar la base de datos de este proyecto, sigue estos pasos:
 
 **Ejemplo de archivo de configuración**:
 
-# Jard Software
-
-// config.js o .env
-```javascript
 module.exports = {
   host: 'localhost',
   user: 'root',
@@ -41,7 +37,8 @@ module.exports = {
 
 
 
-5. *JARD SOFTWARE*:
+
+# Jard Software
 
 Jard Software es una aplicación web para la gestión de equipos informáticos dentro de una organización, permitiendo el registro, control de ubicación, depreciación y generación de informes en formato PDF.
 
@@ -132,7 +129,6 @@ Genera informes en PDF sobre equipos y depreciación.
 1. Clonar este repositorio.
    ```bash
    git clone https://github.com/Anlly-Baleria-Zapata/Jard-software-1
-   ```
 2. Configurar el servidor local (e.g., XAMPP, WAMP).
 3. Importar la base de datos desde el archivo `projard.sql`.
 4. Configurar las rutas y credenciales de la base de datos en los archivos de configuración.
