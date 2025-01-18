@@ -35,3 +35,106 @@ module.exports = {
   password: 'morat12345',
   database: 'projard'
 };
+
+
+
+# Jard Software
+
+Jard Software es una aplicación web para la gestión de equipos informáticos dentro de una organización, permitiendo el registro, control de ubicación, depreciación y generación de informes en formato PDF.
+
+## Tecnologías Utilizadas
+
+- **PHP**
+- **HTML**
+- **CSS**
+- **JavaScript**
+- **Hack**
+
+## Módulos Principales
+
+### 1. Registro de Usuarios
+
+Permite registrar nuevos usuarios en el sistema.
+- **Componentes**:
+  - Formulario de registro 
+  - Procesamiento del formulario 
+- **Flujo**:
+  - Los usuarios ingresan sus datos.
+  - Los datos se procesan y se guardan en la base de datos.
+  - Se confirma el registro exitoso o se muestran errores.
+
+### 2. Inicio de Sesión
+
+Permite a los usuarios acceder al sistema según su rol.
+- **Componentes**:
+  - Formulario de inicio de sesión 
+  - Procesamiento del inicio de sesión 
+- **Flujo**:
+  - Verificación de credenciales.
+  - Redirección según el rol del usuario o muestra de errores.
+
+### 3. Hoja de Vida del Equipo
+
+Registra la información técnica de los equipos.
+- **Componentes**:
+  - Interfaz de registro 
+  - Procesamiento del formulario 
+- **Flujo**:
+  - Registra información como ID, sistema operativo, modelo, mantenimiento y más.
+  - Los datos se almacenan en la base de datos.
+
+### 4. Computadores
+
+Permite gestionar los registros de equipos.
+- **Componentes**:
+  - Visualización de registros 
+  - Edición y desactivación de registros.
+  - Notificación de problemas y gestión de mensajes.
+- **Flujo**:
+  - Búsqueda, edición, activación/desactivación de registros.
+  - Gestión de notificaciones de inventario.
+
+### 5. Registro y Gestión de Ubicación
+
+Gestión de ubicaciones de los equipos.
+- **Componentes**:
+  - Interfaz de ubicación 
+  - Procesamiento del cambio de ubicación.
+- **Flujo**:
+  - Selección de equipo y ubicación.
+  - Actualización en la base de datos y confirmación.
+
+### 6. Depreciación
+
+Calcula la depreciación anual de los equipos.
+- **Componentes**:
+  - Calculadora de depreciación
+  - Visualización y actualización de registros de depreciación.
+- **Flujo**:
+  - Ingreso de valores iniciales.
+  - Cálculo y almacenamiento de la depreciación.
+
+### 7. Generación de Informes
+
+Genera informes en PDF sobre equipos y depreciación.
+- **Componentes**:
+  - Informe de computadores 
+  - Informe de depreciación 
+  - Informe de ubicación 
+- **Flujo**:
+  - Consulta a la base de datos y generación de PDF.
+
+## Instalación
+
+1. Clonar este repositorio.
+   ```bash
+   git clone https://github.com/Anlly-Baleria-Zapata/Jard-software-1
+   ```
+2. Configurar el servidor local (e.g., XAMPP, WAMP).
+3. Importar la base de datos desde el archivo `projard.sql`.
+4. Configurar las rutas y credenciales de la base de datos en los archivos de configuración.
+5. Iniciar el servidor y acceder desde `http://localhost/jard-software-1/index.html`.
+
+## Contribuciones
+
+Contribuciones, reportes de errores y sugerencias son bienvenidos. Por favor, utiliza el flujo estándar de pull requests.
