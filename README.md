@@ -36,9 +36,9 @@ module.exports = {
   database: 'projard'
 };
 
+--------
 
-
-# Jard Software
+## Jard Software
 
 Jard Software es una aplicación web para la gestión de equipos informáticos dentro de una organización, permitiendo el registro, control de ubicación, depreciación y generación de informes en formato PDF.
 
