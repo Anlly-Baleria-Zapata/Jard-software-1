@@ -1,3 +1,20 @@
+# Mi Proyecto Jard Software
+
+Descripción breve.
+Jard software consiste en el Desarrollo e Implementación de un Software de Inventarios, que presentare a una 
+empresa que tiene complicaciones en la gestión y el manejo de su inventario en el 
+área de sistemas, por lo tanto, requiere de un nuevo software que cuente con 
+herramientas más innovadoras, simples y sencillas. El departamento de 
+Infraestructura de Tics de la compañía KAJAS SAS se presenta la necesidad de 
+desarrollar e implementar un Software de Inventario de Equipos Tecnológicos 
+(computadores), que permita hacer seguimiento cada vez que ingrese un equipo 
+hardware a la empresa, desde el momento de su adquisición hasta su depreciación, 
+con la finalidad de tener una mayor organización en los procesos actuales, que sea 
+sistematizado. 
+
+## Demostración en Video 
+[Mira el video de demostración](https://youtu.be/yQmTzlFCjWM)
+
 ## Instalación de la Base de Datos
 
 Para configurar la base de datos de este proyecto, sigue estos pasos:
